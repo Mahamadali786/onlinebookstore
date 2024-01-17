@@ -2,5 +2,5 @@
 FROM ubuntu
 RUN apt update
 RUN apt install apache2 -y
-ADD ./WebContent /var/www/html/
+ADD /home/ubuntu/jenkins/workspace/job2 /var/www/html/
 ENTRYPOINT apachectl -D FOREGROUND
